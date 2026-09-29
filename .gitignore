@@ -1,0 +1,23 @@
+# Служебные папки Git
+Biblioteka/
+Biblioteka_repo/
+
+# Python и виртуальные окружения
+python_embedded/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Другие проекты
+MPVPlayer/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.log

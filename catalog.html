@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог книг | Библиотека</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">📚 Библиотека</a>
+            <nav class="main-nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html" class="active">Книги</a>
+                <a href="events.html">Мероприятия</a>
+                <a href="about.html">О нас</a>
+            </nav>
+            <div class="header-actions">
+                <a href="contacts.html" class="btn btn-sm">Контакты</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO СЕКЦИЯ -->
+    <section class="hero">
+        <div class="hero-inner">
+            <span class="badge">📖 Каталог книг</span>
+            <h1>Богатая коллекция литературы</h1>
+            <p class="lead">Более 50 000 книг в наличии. Классика, современная литература, научные труды.</p>
+        </div>
+    </section>
+
+    <!-- ФИЛЬТРЫ -->
+    <aside class="filters-section">
+        <div class="card">
+            <h3>Фильтры</h3>
+            
+            <div style="margin: 1.5rem 0;">
+                <label><strong>Категория:</strong></label>
+                <select id="category-filter" style="width: 100%; padding: 8px; margin-top: 8px; border-radius: 8px; border: 1px solid #ccc;">
+                    <option value="">Все категории</option>
+                    <option value="fiction">Фантастика и Фэнтези</option>
+                    <option value="classics">Классика литературы</option>
+                    <option value="science">Наука и Образование</option>
+                </select>
+            </div>
+
+            <div style="margin: 1.5rem 0;">
+                <label><strong>Цена:</strong></label>
+                <input type="range" id="price-filter" min="100" max="5000" step="100" value="5000" style="width: 100%; margin-top: 8px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.9rem; color: #666;">
+                    <span>от 100 ₽</span>
+                    <span id="price-value">до 5 000 ₽</span>
+                </div>
+            </div>
+
+            <button class="btn" style="width: 100%;">Применить фильтры</button>
+        </div>
+    </aside>
+
+    <!-- СЕТКА КНИГ (4 блока) -->
+    <section class="section">
+        <h2 class="section-title">Каталог книг</h2>
+        
+        <div class="grid">
+            <!-- Книга 1 -->
+            <article class="card small book-card">
+                <img src="https://via.placeholder.com/300x450/e8e8e8/666?text=Книга+1" alt="Книга">
+                <h3>«Мастер и Маргарита»</h3>
+                <p class="author">Михаил Булгаков</p>
+                <p class="price">450 ₽</p>
+            </article>
+
+            <!-- Книга 2 -->
+            <article class="card small book-card">
+                <img src="https://via.placeholder.com/300x450/e8e8e8/666?text=Книга+2" alt="Книга">
+                <h3>«Преступление и наказание»</h3>
+                <p class="author">Фёдор Достоевский</p>
+                <p class="price">520 ₽</p>
+            </article>
+
+            <!-- Книга 3 -->
+            <article class="card small book-card accent">
+                <span class="badge">Хит продаж</span>
+                <img src="https://via.placeholder.com/300x450/e8e8e8/666?text=Книга+3" alt="Книга">
+                <h3>«Гарри Поттер и философский камень»</h3>
+                <p class="author">Дж. К. Роулинг</p>
+                <p class="price"><span style="text-decoration: line-through; color: #999;">800 ₽</span> 640 ₽</p>
+            </article>
+
+            <!-- Книга 4 -->
+            <article class="card small book-card">
+                <img src="https://via.placeholder.com/300x450/e8e8e8/666?text=Книга+4" alt="Книга">
+                <h3>«Война и мир»</h3>
+                <p class="author">Лев Толстой</p>
+                <p class="price">750 ₽</p>
+            </article>
+
+            <!-- Книга 5 -->
+            <article class="card small book-card accent">
+                <span class="badge">Новинка</span>
+                <img src="https://via.placeholder.com/300x450/e8e8e8/666?text=Книга+5" alt="Книга">
+                <h3>«1984»</h3>
+                <p class="author">Джордж Оруэлл</p>
+                <p class="price"><span style="text-decoration: line-through; color: #999;">600 ₽</span> 480 ₽</p>
+            </article>
+
+            <!-- Книга 6 -->
+            <article class="card small book-card">
+                <img src="https://via.placeholder.com/300x450/e8e8e8/666?text=Книга+6" alt="Книга">
+                <h3>«Анна Каренина»</h3>
+                <p class="author">Лев Толстой</p>
+                <p class="price">580 ₽</p>
+            </article>
+
+            <!-- Книга 7 -->
+            <article class="card small book-card accent">
+                <span class="badge">Хит продаж</span>
+                <img src="https://via.placeholder.com/300x450/e8e8e8/666?text=Книга+7" alt="Книга">
+                <h3>«Мастер и Маргарита»</h3>
+                <p class="author">Михаил Булгаков</p>
+                <p class="price"><span style="text-decoration: line-through; color: #999;">450 ₽</span> 360 ₽</p>
+            </article>
+
+            <!-- Книга 8 -->
+            <article class="card small book-card">
+                <img src="https://via.placeholder.com/300x450/e8e8e8/666?text=Книга+8" alt="Книга">
+                <h3>«Капитанская дочка»</h3>
+                <p class="author">Александр Пушкин</p>
+                <p class="price">320 ₽</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer class="site-footer footer">
+        <p>&copy; 2026 Библиотека. Все права защищены.</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem;">Телефон: +7 (800) 123-45-67 | Email: info@library.ru</p>
+    </footer>
+
+</body>
+</html>
