@@ -1,3 +1,4 @@
+﻿$content = @'
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -8,8 +9,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- ШАПКА -->
     <header class="site-header">
         <div class="header-inner">
             <a href="index.html" class="logo">📚 Библиотека</a>
@@ -25,7 +24,6 @@
         </div>
     </header>
 
-    <!-- HERO СЕКЦИЯ -->
     <section class="hero">
         <div class="hero-inner">
             <span class="badge">📞 Контакты</span>
@@ -34,118 +32,116 @@
         </div>
     </section>
 
-    <!-- СЕКЦИЯ: КОНТАКТНАЯ ИНФОРМАЦИЯ (4 блока) -->
     <section class="section">
         <h2 class="section-title">Контактная информация</h2>
         <div class="grid">
-            <article class="card small contact-card">
+            <article class="card contact-card">
                 <span class="badge">📍 Адрес</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Адрес" alt="Контакты">
+                <img src="images/russian-izba.jpg" alt="Адрес">
                 <h3>Наш адрес</h3>
                 <p>г. Казань, ул. Ленина, д. 45</p>
             </article>
-
-            <article class="card small contact-card">
+            <article class="card contact-card">
                 <span class="badge">📞 Телефон</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Телефон" alt="Контакты">
+                <img src="images/meeting-gufi.jpg" alt="Телефон">
                 <h3>Наши телефоны</h3>
                 <p><a href="tel:+78001234567" style="color: #1f3a5f;">+7 (800) 123-45-67</a></p>
             </article>
-
-            <article class="card small contact-card">
+            <article class="card contact-card">
                 <span class="badge">✉️ Email</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Email" alt="Контакты">
+                <img src="images/harrms.jpg" alt="Email">
                 <h3>Напишите нам</h3>
                 <p><a href="mailto:info@library.ru" style="color: #1f3a5f;">info@library.ru</a></p>
             </article>
-
-            <article class="card small contact-card">
-                <span class="badge">⏰ Время работы</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Время" alt="Контакты">
+            <article class="card contact-card">
+                <span class="badge">⏰ Время</span>
+                <img src="images/biblionoch.jpg" alt="Время">
                 <h3>Режим работы</h3>
                 <p>Пн-Пт: 9:00 - 18:00<br>Сб-Вс: 10:00 - 16:00</p>
             </article>
         </div>
     </section>
 
-    <!-- СЕКЦИЯ: СОЦИАЛЬНЫЕ СЕТИ (4 блока) -->
     <section class="section">
         <h2 class="section-title">Мы в соцсетях</h2>
         <div class="grid">
-            <article class="card small event-card accent">
+            <article class="card event-card accent">
                 <span class="badge">📱 ВКонтакте</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=ВКонтакте" alt="Соцсети">
+                <img src="images/meeting-actress.jpg" alt="ВКонтакте">
                 <h3>Группа ВКонтакте</h3>
                 <p>Следите за новостями и мероприятиями в нашей группе.</p>
             </article>
-
-            <article class="card small event-card accent">
+            <article class="card event-card accent">
                 <span class="badge">🐦 Telegram</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Telegram" alt="Соцсети">
+                <img src="images/poetry.jpg" alt="Telegram">
                 <h3>Канал Telegram</h3>
                 <p>Получайте уведомления о новых книгах и событиях.</p>
             </article>
-
-            <article class="card small event-card accent">
+            <article class="card event-card accent">
                 <span class="badge">💼 Одноклассники</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Одноклассники" alt="Соцсети">
+                <img src="images/ethno.jpg" alt="Одноклассники">
                 <h3>Страница в ОК</h3>
                 <p>Общайтесь с читателями и делитесь впечатлениями.</p>
             </article>
-
-            <article class="card small event-card accent">
+            <article class="card event-card accent">
                 <span class="badge">📸 Instagram</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Instagram" alt="Соцсети">
+                <img src="images/cinema.jpg" alt="Instagram">
                 <h3>Аккаунт в Instagram</h3>
                 <p>Фотоотчёты с мероприятий и красивые фото книг.</p>
             </article>
         </div>
     </section>
 
-    <!-- СЕКЦИЯ: ФОРМА ОБРАТНОЙ СВЯЗИ (4 блока) -->
     <section class="section">
         <h2 class="section-title">Напишите нам</h2>
         <div class="grid">
-            <article class="card small contact-card accent" style="padding: 1.5rem;">
+            <article class="card contact-card accent">
                 <span class="badge">📝 Ваше имя</span>
-                <img src="https://via.placeholder.com=80x80/e8e8e8/666?text=Имя" alt="Поле">
-                <h3 style="margin-top: 1rem;">Ваше имя</h3>
-                <input type="text" placeholder="Иван Иванов" required style="width: 100%; padding: 8px; margin-top: 8px; border-radius: 6px; border: 1px solid #ccc;">
+                <img src="images/quest.jpg" alt="Имя">
+                <h3>Ваше имя</h3>
+                <input type="text" placeholder="Иван Иванов" style="width: 100%; padding: 8px; margin-top: 8px; border-radius: 6px; border: 1px solid #ccc;">
             </article>
-
-            <article class="card small contact-card accent" style="padding: 1.5rem;">
+            <article class="card contact-card accent">
                 <span class="badge">📧 Email</span>
-                <img src="https://via.placeholder.com=80x80/e8e8e8/666?text=Email" alt="Поле">
-                <h3 style="margin-top: 1rem;">Ваш email</h3>
-                <input type="email" placeholder="example@mail.ru" required style="width: 100%; padding: 8px; margin-top: 8px; border-radius: 6px; border: 1px solid #ccc;">
+                <img src="images/harrms.jpg" alt="Email">
+                <h3>Ваш email</h3>
+                <input type="email" placeholder="example@mail.ru" style="width: 100%; padding: 8px; margin-top: 8px; border-radius: 6px; border: 1px solid #ccc;">
             </article>
-
-            <article class="card small contact-card accent" style="padding: 1.5rem;">
+            <article class="card contact-card accent">
                 <span class="badge">📋 Тема</span>
-                <img src="https://via.placeholder.com=80x80/e8e8e8/666?text=Тема" alt="Поле">
-                <h3 style="margin-top: 1rem;">Тема сообщения</h3>
-                <select required style="width: 100%; padding: 8px; margin-top: 8px; border-radius: 6px; border: 1px solid #ccc;">
-                    <option value="">Выберите тему</option>
-                    <option value="order">Заказ книги</option>
-                    <option value="event">Мероприятие</option>
-                    <option value="other">Другое</option>
+                <img src="images/book-day.jpg" alt="Тема">
+                <h3>Тема сообщения</h3>
+                <select style="width: 100%; padding: 8px; margin-top: 8px; border-radius: 6px; border: 1px solid #ccc;">
+                    <option>Выберите тему</option>
+                    <option>Заказ книги</option>
+                    <option>Мероприятие</option>
+                    <option>Другое</option>
                 </select>
             </article>
-
-            <article class="card small contact-card accent" style="padding: 1.5rem;">
+            <article class="card contact-card accent">
                 <span class="badge">💬 Сообщение</span>
-                <img src="https://via.placeholder.com=80x80/e8e8e8/666?text=Сообщение" alt="Поле">
-                <h3 style="margin-top: 1rem;">Ваше сообщение</h3>
-                <textarea placeholder="Ваше сообщение..." rows="4" required style="width: 100%; padding: 8px; margin-top: 8px; border-radius: 6px; border: 1px solid #ccc;"></textarea>
+                <img src="images/lecture.jpg" alt="Сообщение">
+                <h3>Ваше сообщение</h3>
+                <textarea placeholder="Ваше сообщение..." rows="3" style="width: 100%; padding: 8px; margin-top: 8px; border-radius: 6px; border: 1px solid #ccc;"></textarea>
             </article>
         </div>
     </section>
 
-    <!-- ПОДВАЛ -->
-    <footer class="site-footer footer">
+    <footer class="site-footer">
         <p>&copy; 2026 Библиотека. Все права защищены.</p>
         <p style="font-size: 0.8rem; margin-top: 0.5rem;">Телефон: +7 (800) 123-45-67 | Email: info@library.ru</p>
     </footer>
 
+    
+    <!-- КНОПКИ НАВИГАЦИИ -->
+    <div class="scroll-nav">
+        <button class="scroll-btn" id="scrollTop" aria-label="Наверх" title="Наверх">
+            <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+        <button class="scroll-btn down" id="scrollBottom" aria-label="Вниз" title="Вниз">
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+    </div>
+    <script src="scroll-top.js"></script>
 </body>
 </html>

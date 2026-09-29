@@ -1,3 +1,4 @@
+﻿$content = @'
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -8,8 +9,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- ШАПКА -->
     <header class="site-header">
         <div class="header-inner">
             <a href="index.html" class="logo">📚 Библиотека</a>
@@ -25,163 +24,172 @@
         </div>
     </header>
 
-    <!-- HERO СЕКЦИЯ -->
     <section class="hero">
         <div class="hero-inner">
             <span class="badge">📖 Мир книг и знаний</span>
             <h1>Библиотека — это сердце культуры</h1>
             <p class="lead">Более 50 000 книг, регулярные мероприятия и встречи с писателями. Присоединяйтесь к нашему сообществу!</p>
+            <a href="catalog.html" class="btn">Перейти в каталог</a>
         </div>
     </section>
 
-    <!-- СЕКЦИЯ 1: КНИЖНЫЕ ВЫСТАВКИ (4 блока) -->
+    <section class="section">
+        <div class="slider" id="homeSlider">
+            <div class="slides">
+                <div class="slide"><img src="images/slide1.jpg" alt="Слайд 1"></div>
+                <div class="slide"><img src="images/slide2.jpg" alt="Слайд 2"></div>
+                <div class="slide"><img src="images/slide3.jpg" alt="Слайд 3"></div>
+            </div>
+            <div class="nav">
+                <button class="prev" aria-label="Предыдущий">&#9664;</button>
+                <button class="next" aria-label="Следующий">&#9654;</button>
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <h2 class="section-title">📚 Книжные выставки</h2>
         <div class="grid">
-            <article class="card small event-card">
+            <article class="card event-card">
                 <span class="badge">14.09.2026</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Книги-юбиляры" alt="Выставка">
+                <img src="images/books-anniversary.jpg" alt="Выставка">
                 <h3>«Книги-юбиляры 2026 года»</h3>
-                <p>Посвятим выставку писателям, чей юбилей отмечается в этом году. Откройте для себя их лучшие произведения!</p>
+                <p>Посвятим выставку писателям, чей юбилей отмечается в этом году.</p>
             </article>
-
-            <article class="card small event-card">
+            <article class="card event-card">
                 <span class="badge">23.04.2026</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=День+книги" alt="Выставка">
+                <img src="images/book-day.jpg" alt="Выставка">
                 <h3>Международный день книги</h3>
-                <p>Встреча с молодой писательницей Олесей. Обсуждение современных литературных трендов и новых произведений.</p>
+                <p>Встреча с молодой писательницей Олесей. Обсуждение трендов.</p>
             </article>
-
-            <article class="card small event-card">
+            <article class="card event-card">
                 <span class="badge">Библионочь</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Нить+традиций" alt="Выставка">
+                <img src="images/biblionoch.jpg" alt="Выставка">
                 <h3>«Нить традиций»</h3>
-                <p>Тема года на Библионочь-2026. 900+ мероприятий в 200+ библиотеках Москвы для детей и взрослых.</p>
+                <p>Тема года на Библионочь-2026. 900+ мероприятий в 200+ библиотеках.</p>
             </article>
-
-            <article class="card small event-card">
+            <article class="card event-card">
                 <span class="badge">Ежемесячно</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Литература" alt="Выставка">
+                <img src="images/golden-fund.jpg" alt="Выставка">
                 <h3>«Золотой фонд литературы»</h3>
-                <p>Классика мировой и русской литературы. Великие писатели, чьи произведения остаются актуальными.</p>
+                <p>Классика мировой и русской литературы. Великие писатели.</p>
             </article>
         </div>
     </section>
 
-    <!-- СЕКЦИЯ 2: ЛИТЕРАТУРНЫЕ ВСТРЕЧИ (4 блока) -->
     <section class="section">
         <h2 class="section-title">🎭 Литературные встречи</h2>
         <div class="grid">
-            <article class="card small event-card accent">
-                <span class="badge author-meeting">Встреча с автором</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Гуфи" alt="Встреча">
-                <h3>«Быть героем» — Михаил Медалин (Гуфи)</h3>
-                <p>Блогер о популярности, творчестве и том, что значит быть героем сегодня. Встреча с гостями Библионочи.</p>
+            <article class="card event-card accent">
+                <span class="badge">Встреча с автором</span>
+                <img src="images/meeting-gufi.jpg" alt="Встреча">
+                <h3>«Быть героем» — Михаил Медалин</h3>
+                <p>Блогер о популярности, творчестве и том, что значит быть героем.</p>
             </article>
-
-            <article class="card small event-card accent">
-                <span class="badge author-meeting">Встреча с актрисой</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Актриса" alt="Встреча">
-                <h3>«Изумрудный город» — Василина Маковцева</h3>
-                <p>Разговор о магии кино, актерском пути и образах, которые остаются с нами надолго.</p>
+            <article class="card event-card accent">
+                <span class="badge">Встреча с актрисой</span>
+                <img src="images/meeting-actress.jpg" alt="Встреча">
+                <h3>«Изумрудный город» — В. Маковцева</h3>
+                <p>Разговор о магии кино, актерском пути и образах.</p>
             </article>
-
-            <article class="card small event-card accent">
-                <span class="badge poetry">Поэзия</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Поэзия" alt="Встреча">
+            <article class="card event-card accent">
+                <span class="badge">Поэзия</span>
+                <img src="images/poetry.jpg" alt="Встреча">
                 <h3>«Поэзия многонациональной России»</h3>
-                <p>Поэтический концерт с произведениями поэтов народов России — от Габдуллы Тукая до Мустая Карима.</p>
+                <p>Поэтический концерт с произведениями поэтов народов России.</p>
             </article>
-
-            <article class="card small event-card accent">
-                <span class="badge author-meeting">Литературная читка</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Хармс" alt="Встреча">
+            <article class="card event-card accent">
+                <span class="badge">Литературная читка</span>
+                <img src="images/harrms.jpg" alt="Встреча">
                 <h3>«Дорогая Клавдия Васильевна…» — Хармс</h3>
-                <p>Любовные письма Даниила Хармса к Клавдии Пугачевой. Театрализованная читка обэриутского творчества.</p>
+                <p>Любовные письма Даниила Хармса. Театрализованная читка.</p>
             </article>
         </div>
     </section>
 
-    <!-- СЕКЦИЯ 3: МЕРОПРИЯТИЯ ДЛЯ ДЕТЕЙ И ВЗРОСЛЫХ (4 блока) -->
     <section class="section">
         <h2 class="section-title">👨‍👩‍👧‍👦 Мероприятия для всех</h2>
         <div class="grid">
-            <article class="card small event-card">
+            <article class="card event-card">
                 <span class="badge">Для детей</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Русская+изба" alt="Мероприятие">
+                <img src="images/russian-izba.jpg" alt="Мероприятие">
                 <h3>«Ниточка за иголочкой»</h3>
-                <p>Погрузитесь в атмосферу русской избы. Народные игры, загадки и веселые задания для детей.</p>
+                <p>Атмосфера русской избы. Народные игры и веселые задания.</p>
             </article>
-
-            <article class="card small event-card">
+            <article class="card event-card">
                 <span class="badge">Для взрослых</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Фольклор" alt="Мероприятие">
-                <h3>«Героический эпос» — Фольклорный спектакль</h3>
-                <p>Погрузитесь в мир древних легенд. Живая музыка, танцы и участие в действии.</p>
+                <img src="images/folklore.jpg" alt="Мероприятие">
+                <h3>«Героический эпос»</h3>
+                <p>Погрузитесь в мир древних легенд. Живая музыка и танцы.</p>
             </article>
-
-            <article class="card small event-card">
+            <article class="card event-card">
                 <span class="badge">Для семей</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Этноколорит" alt="Мероприятие">
+                <img src="images/ethno.jpg" alt="Мероприятие">
                 <h3>«Этноколорит: живые истории»</h3>
-                <p>Представители разных народов России поделятся личными историями о традициях и праздниках.</p>
+                <p>Представители разных народов России поделятся историями.</p>
             </article>
-
-            <article class="card small event-card">
+            <article class="card event-card">
                 <span class="badge">Для всех</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Музыка" alt="Мероприятие">
+                <img src="images/runa-project.jpg" alt="Мероприятие">
                 <h3>Концерт группы Runa Project</h3>
-                <p>Киберфолк-группа соединяет фольклорные мотивы с электронной музыкой. Атмосферное путешествие.</p>
+                <p>Киберфолк-группа соединяет фольклорные мотивы с электроникой.</p>
             </article>
         </div>
     </section>
 
-    <!-- СЕКЦИЯ 4: ФОРМАТЫ МЕРОПРИЯТИЙ (4 блока) -->
     <section class="section">
         <h2 class="section-title">🎪 Форматы мероприятий</h2>
         <div class="grid">
-            <article class="card small event-card accent">
+            <article class="card event-card accent">
                 <span class="badge">Интерактив</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Квест" alt="Формат">
+                <img src="images/quest.jpg" alt="Формат">
                 <h3>Квесты и викторины</h3>
-                <p>Интерактивные программы, где гости выполняют задания и исследуют культурные образы.</p>
+                <p>Интерактивные программы, где гости выполняют задания.</p>
             </article>
-
-            <article class="card small event-card accent">
+            <article class="card event-card accent">
                 <span class="badge">Спектакли</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Театр" alt="Формат">
+                <img src="images/theater.jpg" alt="Формат">
                 <h3>Театральные импровизации</h3>
-                <p>Живое театрализованное представление с участием зрителей. Станьте частью истории!</p>
+                <p>Живое театрализованное представление с участием зрителей.</p>
             </article>
-
-            <article class="card small event-card accent">
+            <article class="card event-card accent">
                 <span class="badge">Кино</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Фильм" alt="Формат">
+                <img src="images/cinema.jpg" alt="Формат">
                 <h3>Кинопоказы</h3>
-                <p>Документальное кино о женщинах разных народов России, хранительницах традиций.</p>
+                <p>Документальное кино о женщинах разных народов России.</p>
             </article>
-
-            <article class="card small event-card accent">
+            <article class="card event-card accent">
                 <span class="badge">Лекции</span>
-                <img src="https://via.placeholder.com/300x250/e8e8e8/666?text=Лекция" alt="Формат">
+                <img src="images/lecture.jpg" alt="Формат">
                 <h3>Встречи с писателями и лекции</h3>
                 <p>Диалог с авторами, обсуждение произведений, ответы на вопросы.</p>
             </article>
         </div>
     </section>
 
-    <!-- ЦИТАТА -->
     <section class="section">
         <blockquote class="quote">
             «Библиотека — это не просто хранилище книг. Это пространство, где рождаются новые идеи, где люди встречаются и делятся знаниями.»
         </blockquote>
     </section>
 
-    <!-- ПОДВАЛ -->
-    <footer class="site-footer footer">
+    <footer class="site-footer">
         <p>&copy; 2026 Библиотека. Все права защищены.</p>
         <p style="font-size: 0.8rem; margin-top: 0.5rem;">Телефон: +7 (800) 123-45-67 | Email: info@library.ru</p>
     </footer>
 
+    <script src="slider.js"></script>
+
+    
+    <!-- КНОПКИ НАВИГАЦИИ -->
+    <div class="scroll-nav">
+        <button class="scroll-btn" id="scrollTop" aria-label="Наверх" title="Наверх">
+            <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+        <button class="scroll-btn down" id="scrollBottom" aria-label="Вниз" title="Вниз">
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+    </div>
+    <script src="scroll-top.js"></script>
 </body>
 </html>
