@@ -1,7 +1,4 @@
-﻿cd C:\Users\gp72\Documents\MyProject
-
-$content = @'
-/* ===================== БАЗА ===================== */
+﻿/* ===================== БАЗА ===================== */
 html { box-sizing: border-box; scroll-behavior: smooth; }
 *, *::before, *::after { box-sizing: inherit; margin: 0; padding: 0; }
 
@@ -347,24 +344,4 @@ body {
     .scroll-nav { bottom: 1.25rem; right: 1.25rem; gap: 0.5rem; }
     .scroll-btn { width: 44px; height: 44px; }
     .scroll-btn svg { width: 18px; height: 18px; }
-}
-'@
-[System.IO.File]::WriteAllText("$PWD\style.css", $content, (New-Object System.Text.UTF8Encoding($true)))
-Write-Host "OK: style.css записан целиком" -ForegroundColor Green
-
-# Проверка
-$check = Get-Content style.css -Raw
-$open = ([regex]::Matches($check, '\{')).Count
-$close = ([regex]::Matches($check, '\}')).Count
-$navCount = ([regex]::Matches($check, '\.scroll-nav\s*\{')).Count
-$btnCount = ([regex]::Matches($check, '\.scroll-btn\s*\{')).Count
-
-Write-Host "`nСкобок: открывающих $open, закрывающих $close" -ForegroundColor Cyan
-Write-Host "Правил .scroll-nav: $navCount" -ForegroundColor Cyan
-Write-Host "Правил .scroll-btn: $btnCount" -ForegroundColor Cyan
-
-if ($open -eq $close -and $navCount -ge 1 -and $btnCount -ge 1) {
-    Write-Host "`nOK: CSS полностью корректен!" -ForegroundColor Green
-} else {
-    Write-Host "`nВНИМАНИЕ: проверьте CSS!" -ForegroundColor Red
 }
